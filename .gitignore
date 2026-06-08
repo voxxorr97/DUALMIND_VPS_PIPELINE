@@ -1,0 +1,8 @@
+.env
+data/dualmind.db
+__pycache__/
+*.pyc
+.venv/
+logs/
+tmp/
+output/
