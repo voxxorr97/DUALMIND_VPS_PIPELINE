@@ -5,3 +5,7 @@ Pipeline léger pour automatiser Archive Noire sur VPS Hetzner.
 ## Objectif
 
 Préparer une base propre pour installer Docker, n8n, Python, ffmpeg, SQLite et les futurs scripts du pipeline vidéo.
+
+## Documentation
+
+- [Installation de base du VPS](docs/VPS_SETUP.md)
