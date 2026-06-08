@@ -1,0 +1,25 @@
+# Python dependencies for DUALMIND VPS PIPELINE.
+# Target runtime: Ubuntu 22.04 ARM64 on Hetzner CAX41.
+# Keep this file minimal until the pipeline scripts are implemented.
+
+python-dotenv>=1.0,<2.0
+requests>=2.32,<3.0
+httpx>=0.27,<1.0
+pydantic>=2.8,<3.0
+PyYAML>=6.0,<7.0
+
+# Media helpers around system ffmpeg/ffprobe binaries.
+ffmpeg-python>=0.2,<1.0
+
+# API clients planned for Phase 1.x integrations.
+anthropic>=0.40,<1.0
+elevenlabs>=1.12,<2.0
+replicate>=1.0,<2.0
+openai>=1.55,<2.0
+
+# Google Drive / YouTube API support.
+google-api-python-client>=2.150,<3.0
+google-auth>=2.35,<3.0
+google-auth-oauthlib>=1.2,<2.0
+
+# Local database access uses Python's built-in sqlite3 module.
