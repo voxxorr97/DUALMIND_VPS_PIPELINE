@@ -53,6 +53,9 @@ Champs principaux :
 - `platform` : plateforme cible.
 - `duration_seconds` : durée prévue en secondes.
 - `status` : état du script dans le workflow.
+- `audio_path` : chemin optionnel vers la narration générée par Voicegen.
+- `images_path` : JSON array optionnel des images générées par ImageGen.
+- `video_path` : chemin optionnel vers le MP4 assemblé par VideoAssembler.
 - `created_at` : date de création, remplie automatiquement par défaut.
 
 ### `prompts_history`

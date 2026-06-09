@@ -56,6 +56,9 @@ def init_db() -> None:
                 platform TEXT NOT NULL,
                 duration_seconds INTEGER,
                 status TEXT NOT NULL DEFAULT 'draft',
+                audio_path TEXT,
+                images_path TEXT,
+                video_path TEXT,
                 created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
                 FOREIGN KEY (topic_id) REFERENCES topics_hot(id) ON DELETE SET NULL
             );
