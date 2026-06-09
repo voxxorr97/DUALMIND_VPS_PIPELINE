@@ -59,6 +59,7 @@ def init_db() -> None:
                 audio_path TEXT,
                 images_path TEXT,
                 video_path TEXT,
+                youtube_url TEXT,
                 created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
                 FOREIGN KEY (topic_id) REFERENCES topics_hot(id) ON DELETE SET NULL
             );
@@ -75,8 +76,10 @@ def init_db() -> None:
             CREATE TABLE IF NOT EXISTS video_performance (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
                 script_id INTEGER,
+                video_id TEXT,
                 platform TEXT NOT NULL,
                 video_url TEXT,
+                youtube_url TEXT,
                 views INTEGER NOT NULL DEFAULT 0,
                 likes INTEGER NOT NULL DEFAULT 0,
                 comments INTEGER NOT NULL DEFAULT 0,
